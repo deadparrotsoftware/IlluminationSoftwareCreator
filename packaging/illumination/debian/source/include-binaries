@@ -1,0 +1,8 @@
+man/illumination.1.gz
+install/opt/RadicalBreeze/illumination/illumicon.png
+install/opt/RadicalBreeze/illumination/illumicon48.png
+install/opt/RadicalBreeze/illumination/illumination
+install/opt/RadicalBreeze/illumination/illumination Libs/libRBAppearancePak.so
+install/opt/RadicalBreeze/illumination/illumination Libs/libRBShell.so
+install/opt/RadicalBreeze/illumination/illumination Libs/libREALSQLDatabase.so
+install/usr/bin/illumination

@@ -36,6 +36,14 @@ then
 
     ./debian.sh
 
+If you're using Open Build Service then upload the following files:
+
+    illumination_version.orig.tar.gz
+    illumination_version.orig.tar.gz.asc
+    illumination_version-1.debian.tar.gz
+    illumination_version-1.dsc
+
+
 On RPM based systems
 --------------------
 
@@ -50,6 +58,33 @@ If necessary:
 then
 
     ./rpm.sh
+
+If you're using Open Build Service then upload the following files:
+
+    illumination.spec
+    illumination_version.orig.tar.gz
+
+
+Arch/Pacman based systems
+-------------------------
+
+Edit the arch.sh script and make sure that VERSION is set to the current version of the software.  The sed statements within that script will try to automatically update version numbers elsewhere to avoid duplicated effort.
+
+Move to the packaging/illumination directory, then run the arch.sh script.
+
+If necessary:
+
+    chmod +x arch.sh
+
+then
+
+    ./arch.sh
+
+If you're using Open Build Service then upload the following files:
+
+    PKGBUILD
+    illumination-version.tar.gz
+
 
 Miscellaneous
 -------------

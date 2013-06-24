@@ -10,9 +10,11 @@ CURRDIR=`pwd`
 SOURCE=~/rpmbuild/SOURCES/${APP}-${VERSION}.orig.tar.gz
 
 #update version numbers automatically - so you don't have to
-sed -i 's/VERSION='${PREV_VERSION}'/VERSION='${VERSION}'/g' Makefile debian.sh
+sed -i 's/VERSION='${PREV_VERSION}'/VERSION='${VERSION}'/g' Makefile debian.sh arch.sh
 sed -i 's/Version: '${PREV_VERSION}'/Version: '${VERSION}'/g' rpmpackage/${APP}.spec
 sed -i 's/Release: '${RELEASE}'/Release: '${RELEASE}'/g' rpmpackage/${APP}.spec
+sed -i 's/pkgrel='${RELEASE}'/pkgrel='${RELEASE}'/g' archpackage/PKGBUILD
+sed -i 's/pkgver='${PREV_VERSION}'/pkgver='${VERSION}'/g' archpackage/PKGBUILD
 
 sudo yum groupinstall "Development Tools"
 sudo yum install rpmdevtools

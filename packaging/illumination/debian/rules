@@ -45,13 +45,16 @@ install: build clean
 		 install -m 644 desktop/icon.svg $(CURDIR)/debian/$(APP)/usr/share/icons/hicolor/scalable/apps/$(APP).svg
 		 install -m 644 desktop/icon.svg $(CURDIR)/debian/$(APP)/usr/share/pixmaps/$(APP).svg
 		 install -m 755 "install/opt/RadicalBreeze/illumination/illumicon.png" $(DESTDIR)"/opt/RadicalBreeze/illumination/illumicon.png"
+		 install -m 755 "install/opt/RadicalBreeze/illumination/illumicon2.png" $(DESTDIR)"/opt/RadicalBreeze/illumination/illumicon2.png"
 		 install -m 755 "install/opt/RadicalBreeze/illumination/illumicon48.png" $(DESTDIR)"/opt/RadicalBreeze/illumination/illumicon48.png"
 		 install -m 755 --strip "install/opt/RadicalBreeze/illumination/illumination" $(DESTDIR)"/opt/RadicalBreeze/illumination/illumination"
+		 install -m 755 "install/opt/RadicalBreeze/illumination/illumicon.xpm" $(DESTDIR)"/opt/RadicalBreeze/illumination/illumicon.xpm"
 		 install -m 755 "install/opt/RadicalBreeze/illumination/illumination Libs/libRBAppearancePak.so" $(DESTDIR)"/opt/RadicalBreeze/illumination/illumination Libs/libRBAppearancePak.so"
 		 install -m 755 "install/opt/RadicalBreeze/illumination/illumination Libs/libRBShell.so" $(DESTDIR)"/opt/RadicalBreeze/illumination/illumination Libs/libRBShell.so"
 		 install -m 755 "install/opt/RadicalBreeze/illumination/illumination Libs/libREALSQLDatabase.so" $(DESTDIR)"/opt/RadicalBreeze/illumination/illumination Libs/libREALSQLDatabase.so"
 		 install -m 755 "install/usr/bin/illumination" $(DESTDIR)"/usr/bin/illumination"
 binary-indep: build install
+			  dh_shlibdeps
 			  dh_testdir
 			  dh_testroot
 			  dh_installchangelogs

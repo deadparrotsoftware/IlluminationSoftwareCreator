@@ -2,12 +2,12 @@
 pkgname=illumination
 pkgver=6.0.0
 pkgrel=1
-pkgdesc="Illumination Software Creator allows you to quickily (and visually) build apps for Android, iOS, HTML5, Flash and Python/GTK.  Illumination generates raw source code (including XCode and Eclipse project files when necessary) for each platform"
-arch=('x86_64' 'i686')
+pkgdesc="Illumination Software Creator allows you to quickily (and visually) build apps for Android, iOS, HTML5, Flash and Python/GTK.  Illumination generates raw source code (including XCode and Eclipse project files when necessary) for each platform -- making it an excellent rapid prototyping tool for native apps."
+arch=('i686' 'x86_64')
 url="http://www.lunduke.com"
 license=('GPL2')
 groups=()
-depends=('glibc' 'expat' 'glib2' 'gtk2')
+depends=( 'glibc' 'expat' 'glib2' 'gtk2')
 makedepends=()
 optdepends=()
 provides=()
@@ -19,7 +19,7 @@ install=
 changelog=
 source=($pkgname-$pkgver.tar.gz)
 noextract=()
-md5sums=(59c144d9c1dcd7739c7ba5d723e7d232)
+md5sums=(e3ceefd158b1ce81ee2a1e42051e71e3)
 build() {
   cd "$srcdir/$pkgname-$pkgver"
   ./configure --prefix=/usr

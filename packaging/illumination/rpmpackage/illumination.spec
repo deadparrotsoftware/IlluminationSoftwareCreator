@@ -2,7 +2,7 @@ Name: illumination
 Version: 6.0.0
 Release: 1%{?dist}
 Summary: Visual App Creation for Android, iOS, HTML5, PyGTK and Flash
-License: gpl2
+License: GPL2
 URL: http://www.lunduke.com
 Packager: Bob Mottram (4096 bits) <bob@robotics.uk.to>
 Source0: http://yourdomainname.com/src/%{name}_%{version}.orig.tar.gz
@@ -13,7 +13,8 @@ Requires: glibc expat glib2 gtk2 expat-devel
 Illumination Software Creator allows you to quickily (and visually) build
 apps for Android, iOS, HTML5, Flash and Python/GTK.  Illumination generates
 raw source code (including XCode and Eclipse project files when necessary)
-for each platform
+for each platform -- making it an excellent rapid prototyping tool for
+native apps.
 
 %prep
 %setup -q
@@ -75,13 +76,15 @@ make install -B DESTDIR=%{buildroot}
 %attr(644,root,root) /usr/share/icons/hicolor/scalable/apps/%{name}.svg
 %attr(644,root,root) /usr/share/pixmaps/%{name}.svg
 %attr(755,root,root) /opt/RadicalBreeze/illumination/illumicon.png
+%attr(755,root,root) /opt/RadicalBreeze/illumination/illumicon2.png
 %attr(755,root,root) /opt/RadicalBreeze/illumination/illumicon48.png
 %attr(755,root,root) /opt/RadicalBreeze/illumination/illumination
+%attr(755,root,root) /opt/RadicalBreeze/illumination/illumicon.xpm
 %attr(755,root,root) "/opt/RadicalBreeze/illumination/illumination Libs/libRBAppearancePak.so"
 %attr(755,root,root) "/opt/RadicalBreeze/illumination/illumination Libs/libRBShell.so"
 %attr(755,root,root) "/opt/RadicalBreeze/illumination/illumination Libs/libREALSQLDatabase.so"
 %attr(755,root,root) /usr/bin/illumination
 
 %changelog
-* Sat Jun 22 2013  Bob Mottram (4096 bits) <bob@robotics.uk.to>
+* Sat Jun 29 2013  Bob Mottram (4096 bits) <bob@robotics.uk.to>
 - Spec file created

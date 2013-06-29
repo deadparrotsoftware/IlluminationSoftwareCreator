@@ -9,14 +9,14 @@ CURRDIR=`pwd`
 SOURCE=archpackage/${APP}-${VERSION}.tar.gz
 
 # Update version numbers automatically - so you don't have to
-sed -i 's/VERSION='${PREV_VERSION}'/VERSION='${VERSION}'/g' Makefile debian.sh rpm.sh
+sed -i 's/VERSION='${PREV_VERSION}'/VERSION='${VERSION}'/g' Makefile debian.sh rpm.sh puppy.sh ebuild.sh
 sed -i 's/Version: '${PREV_VERSION}'/Version: '${VERSION}'/g' rpmpackage/${APP}.spec
 sed -i 's/Release: '${RELEASE}'/Release: '${RELEASE}'/g' rpmpackage/${APP}.spec
 sed -i 's/pkgrel='${RELEASE}'/pkgrel='${RELEASE}'/g' archpackage/PKGBUILD
 sed -i 's/pkgver='${PREV_VERSION}'/pkgver='${VERSION}'/g' archpackage/PKGBUILD
+sed -i "s/-${PREV_VERSION}-/-${VERSION}-/g" puppypackage/pet.specs
+sed -i "s/|${PREV_VERSION}|/|${VERSION}|/g" puppypackage/pet.specs
 
-# Set the type of architecture
-sed -i "s/arch=('any')/arch=('${ARCH_TYPE}')/g" "archpackage/PKGBUILD"
 
 # Create the source code
 make clean

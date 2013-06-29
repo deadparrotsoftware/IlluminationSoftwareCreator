@@ -86,6 +86,24 @@ If you're using Open Build Service then upload the following files:
     illumination-version.tar.gz
 
 
+Puppy Linux
+-----------
+
+Edit the puppy.sh script and make sure that VERSION is set to the current version of the software.  The sed statements within that script will try to automatically update version numbers elsewhere to avoid duplicated effort.
+
+Move to the packaging/illumination directory, then run the puppy.sh script.
+
+If necessary:
+
+    chmod +x puppy.sh
+
+then
+
+    ./puppy.sh
+
+The resulting PET should appear within the subdirectory called puppypackage.
+
+
 Miscellaneous
 -------------
 

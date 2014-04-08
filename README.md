@@ -3,22 +3,21 @@ IlluminationSoftwareCreator
 
 Illumination Software Creator
 
-Licensing: Illumination Software Creatoris licensed under the GPLv2 license.
+Licensing: Illumination Software Creator is NO LONGER licensed under the GPLv2 license.
+
+FORKS of this product are NOT ALLOWED/LEGAL
 
 
 
-Copyright (C) 2013 Bryan Lunduke
+Copyright (C) 2014 Dead Parrot Software Inc. (Purchased from Bryan Lunduke)
 
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
+This program is currently NOT free software; you may NOT redistribute it in any form.
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+Any forks or copies of this code - which has known bugs in
+the version originally posted here - are not legal.
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+
+This program was originally provided with WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  It is available her ONLY for personal use.
+
+Any questions should be directed to: deadparrotsoftware@gmail.com
